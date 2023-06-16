@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "packagenamespaces"
+version = "0.1.0"
+description = ""
+authors = ["Michael Ikemann <[omitted]>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = ">=3.8"
+myns-goodbye = { path = "./../goodbye/dist/myns_goodbye-0.1.0-py3-none-any.whl" }
+myns-hello = { path = "./../hello/dist/myns_hello-0.1.0-py3-none-any.whl" }
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
